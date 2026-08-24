@@ -50,17 +50,17 @@ export const ScrollToTop = () => {
     >
       <button
         onClick={scrollToTop}
-        className="relative group w-11 h-11 rounded-full bg-zinc-950/80 border border-white/15 backdrop-blur-xl flex items-center justify-center text-zinc-400 hover:text-white hover:border-white/30 shadow-2xl shadow-black/90 active:scale-95 transition-all"
+        className="relative group w-11 h-11 rounded-full bg-white/90 border border-zinc-200 backdrop-blur-xl flex items-center justify-center text-zinc-600 hover:text-zinc-950 hover:border-zinc-300 shadow-xl shadow-zinc-900/10 active:scale-95 transition-all"
         aria-label="Scroll to top"
         title="Go to top"
       >
-        {/* SVG Circular Scroll Progress Ring */}
+        {/* SVG Circular Scroll Progress Ring (Light Theme) */}
         <svg className="absolute inset-0 w-full h-full -rotate-90 pointer-events-none p-0.5" viewBox="0 0 44 44">
           <circle
             cx="22"
             cy="22"
             r={radius}
-            className="text-white/[0.08]"
+            className="text-zinc-200"
             strokeWidth="2.5"
             stroke="currentColor"
             fill="transparent"
@@ -69,7 +69,7 @@ export const ScrollToTop = () => {
             cx="22"
             cy="22"
             r={radius}
-            className="text-blue-400 transition-all duration-100"
+            className="text-blue-600 transition-all duration-100"
             strokeWidth="2.5"
             strokeDasharray={circumference}
             strokeDashoffset={strokeDashoffset}
@@ -80,7 +80,7 @@ export const ScrollToTop = () => {
         </svg>
 
         {/* Arrow Icon */}
-        <ArrowUp className="w-4 h-4 text-zinc-300 group-hover:text-white group-hover:-translate-y-0.5 transition-transform" />
+        <ArrowUp className="w-4 h-4 text-zinc-700 group-hover:text-zinc-950 group-hover:-translate-y-0.5 transition-transform" />
       </button>
     </div>
   );

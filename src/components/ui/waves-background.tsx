@@ -277,14 +277,14 @@ void main() {
 
 const UNIFORMS = {
   colors: [
-    [0.008, 0.045, 0.130],   // Deep midnight navy
-    [0.060, 0.280, 0.650],   // Rich sapphire blue
-    [0.220, 0.720, 0.980],   // Vibrant electric cyan current
-    [0.880, 0.960, 1.000],   // Luminous bright ice-white/cyan peak
-    [0.880, 0.960, 1.000],
-    [0.880, 0.960, 1.000],
-    [0.880, 0.960, 1.000],
-    [0.880, 0.960, 1.000],
+    [0.960, 0.980, 1.000],   // Crisp white/ice-blue base
+    [0.820, 0.910, 0.990],   // Soft sky blue
+    [0.450, 0.720, 0.980],   // Vibrant azure highlight
+    [0.180, 0.480, 0.920],   // Sapphire blue wave crest
+    [0.960, 0.980, 1.000],
+    [0.960, 0.980, 1.000],
+    [0.960, 0.980, 1.000],
+    [0.960, 0.980, 1.000],
   ] as [number, number, number][],
   colorCount: 4,
   scale: 1.120,

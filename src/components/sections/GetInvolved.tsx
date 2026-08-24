@@ -34,7 +34,7 @@ export const GetInvolved = () => {
   ];
 
   return (
-    <section id="get-involved" className="relative z-10 w-full border-t border-white/[0.08] bg-black text-white">
+    <section id="get-involved" className="relative z-10 w-full border-t border-zinc-200 bg-white text-zinc-900">
       
       {/* Top Header Grid Row */}
       <div className="py-20 sm:py-24 px-6 sm:px-12 max-w-4xl text-left">
@@ -42,40 +42,40 @@ export const GetInvolved = () => {
           <p className="text-xs uppercase tracking-widest text-zinc-500 font-medium mb-3">
             Get Involved
           </p>
-          <h2 className="text-3xl sm:text-5xl font-serif text-white tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-5xl font-serif text-zinc-950 tracking-tight leading-[1.15]">
             Four simple ways to <br />
-            <span className="font-serif italic font-light text-blue-200">be part of the fun</span>
+            <span className="font-serif italic font-light text-blue-600">be part of the fun</span>
           </h2>
-          <p className="text-sm sm:text-base text-zinc-400 font-light mt-4 leading-relaxed">
-            Whether you are a student, teacher, coach, or robotics fan, anyone can join Inno Expo GL.
+          <p className="text-sm sm:text-base text-zinc-600 font-normal mt-4 leading-relaxed">
+            Whether you are a student, teacher, coach, or robotics fan, anyone can join InnoExpo GL.
           </p>
         </AppleReveal>
       </div>
 
-      {/* 4 Pathways Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-white/[0.08] divide-y sm:divide-y-0 sm:divide-x divide-white/[0.08]">
+      {/* 4 Pathways Grid (Light Theme) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-zinc-200 divide-y sm:divide-y-0 sm:divide-x divide-zinc-200">
         {pathways.map((pathway, i) => (
           <div
             key={i}
-            className="p-8 sm:p-10 transition-colors duration-200 hover:bg-white/[0.02] flex flex-col justify-between text-left"
+            className="p-8 sm:p-10 transition-colors duration-200 hover:bg-zinc-50/70 flex flex-col justify-between text-left"
           >
             <AppleReveal delay={i * 0.1}>
               <div>
-                <div className="text-xs text-zinc-500 font-serif mb-3">Option 0{i + 1}</div>
-                <h3 className="text-lg sm:text-xl font-serif text-white mb-2.5">
+                <div className="text-xs text-zinc-400 font-mono mb-3">Option 0{i + 1}</div>
+                <h3 className="text-lg sm:text-xl font-serif text-zinc-950 mb-2.5">
                   {pathway.title}
                 </h3>
-                <p className="text-xs text-zinc-400 font-light leading-relaxed mb-6">
+                <p className="text-xs sm:text-sm text-zinc-600 font-normal leading-relaxed mb-6">
                   {pathway.desc}
                 </p>
               </div>
 
               <Link
                 href={pathway.link}
-                className="inline-flex items-center gap-2 text-xs text-zinc-300 hover:text-white transition-colors duration-150 pt-4 border-t border-white/[0.06]"
+                className="inline-flex items-center gap-2 text-xs font-semibold text-zinc-950 hover:text-blue-600 transition-colors duration-150 pt-4 border-t border-zinc-100"
               >
                 <span>{pathway.action}</span>
-                <ArrowRight className="w-3.5 h-3.5 text-zinc-500" />
+                <ArrowRight className="w-3.5 h-3.5 text-zinc-400" />
               </Link>
             </AppleReveal>
           </div>

@@ -16,28 +16,28 @@ import FinalCTA from "@/components/sections/FinalCTA";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white flex flex-col justify-between selection:bg-blue-500 selection:text-white relative">
+    <main className="min-h-screen bg-white text-zinc-900 flex flex-col justify-between selection:bg-blue-600 selection:text-white relative">
       
       {/* 1. Fixed Floating Glass Pill Header */}
       <Header />
 
-      {/* 2. Unified Hero Backdrop with Crisp Contrast & Upward Wave Position */}
+      {/* 2. Unified Hero Backdrop with Light Sky Shader Flow */}
       <div className="relative w-full overflow-hidden">
-        {/* Waves Animation: Centered higher up, softly fading before the subtitle and buttons */}
-        <div className="absolute inset-x-0 top-0 h-[620px] sm:h-[680px] pointer-events-none overflow-hidden [mask-image:radial-gradient(ellipse_75%_70%_at_50%_15%,black_25%,rgba(0,0,0,0.45)_55%,transparent_82%)]">
+        {/* Waves Animation: Soft sky waves fading into pure white */}
+        <div className="absolute inset-x-0 top-0 h-[620px] sm:h-[680px] pointer-events-none overflow-hidden [mask-image:radial-gradient(ellipse_80%_75%_at_50%_15%,black_30%,rgba(0,0,0,0.5)_60%,transparent_85%)]">
           <ShaderBackground className="w-full h-full opacity-80" />
         </div>
 
-        {/* Ambient Sapphire Blue Glow Base */}
+        {/* Ambient Sky Blue Glow Base */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -top-10 left-1/2 -translate-x-1/2 w-[680px] h-[450px] bg-blue-600/18 blur-[140px] rounded-full"
+          className="pointer-events-none absolute -top-10 left-1/2 -translate-x-1/2 w-[720px] h-[450px] bg-blue-500/10 blur-[120px] rounded-full"
         />
 
-        {/* Darkening Vignette Layer for High Text Contrast */}
+        {/* Soft Light Fade Layer */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 h-[720px] bg-[radial-gradient(ellipse_85%_75%_at_50%_35%,transparent_25%,rgba(0,0,0,0.7)_65%,black_92%)]"
+          className="pointer-events-none absolute inset-0 h-[720px] bg-[radial-gradient(ellipse_90%_80%_at_50%_30%,transparent_30%,rgba(255,255,255,0.7)_65%,white_95%)]"
         />
 
         {/* Hero Content */}
@@ -45,7 +45,7 @@ export default function Home() {
       </div>
 
       {/* 3. Structured Architectural Grid Sections */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto border-x border-white/[0.08]">
+      <div className="relative z-10 w-full max-w-7xl mx-auto border-x border-zinc-200">
         
         {/* 1. About Us Section */}
         <AboutUs />
@@ -72,7 +72,7 @@ export default function Home() {
         <FinalCTA />
       </div>
 
-      {/* Atmospheric Blue Glow Footer */}
+      {/* Atmospheric Footer */}
       <Footer />
 
       {/* Go To Top & Scroll Pointer Progress Ring */}

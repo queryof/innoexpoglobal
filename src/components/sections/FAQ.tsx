@@ -25,7 +25,7 @@ const faqData: FAQItem[] = [
     category: "Registration",
     question: "How do I register my team?",
     answer:
-      "You can register directly on the Inno Expo GL website. Choose your game category, enter your team member details, and submit your registration.",
+      "You can register directly on the InnoExpo GL website. Choose your game category, enter your team member details, and submit your registration.",
   },
   {
     id: "3",
@@ -76,9 +76,9 @@ export const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="relative z-10 w-full border-t border-white/[0.08] bg-black text-white">
-      {/* 2-Column Structured Grid Layout */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-white/[0.08]">
+    <section id="faq" className="relative z-10 w-full border-t border-zinc-200 bg-white text-zinc-900">
+      {/* 2-Column Structured Grid Layout (Light Theme) */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-zinc-200">
         
         {/* Left Column */}
         <div className="lg:col-span-5 py-20 sm:py-28 px-6 sm:px-12 flex flex-col justify-between text-left lg:sticky lg:top-24 h-full">
@@ -88,12 +88,12 @@ export const FAQ = () => {
                 FAQ
               </p>
 
-              <h2 className="text-3xl sm:text-5xl font-serif text-white tracking-tight leading-[1.15] mb-4">
+              <h2 className="text-3xl sm:text-5xl font-serif text-zinc-950 tracking-tight leading-[1.15] mb-4">
                 Frequently <br />
-                <span className="font-serif italic font-light text-blue-200">asked questions</span>
+                <span className="font-serif italic font-light text-blue-600">asked questions</span>
               </h2>
 
-              <p className="text-xs sm:text-sm text-zinc-400 font-light leading-relaxed mb-8">
+              <p className="text-xs sm:text-sm text-zinc-600 font-normal leading-relaxed mb-8">
                 Got questions about the competition, rules, or the Japan trip? Find quick and simple answers here.
               </p>
             </div>
@@ -101,23 +101,23 @@ export const FAQ = () => {
             {/* "Still have questions?" Card */}
             <Link
               href="/contact"
-              className="group rounded-2xl border border-white/[0.08] bg-zinc-950/60 p-5 backdrop-blur-xl transition-all duration-200 hover:border-white/20 hover:bg-zinc-900/60 shadow-lg shadow-black/40 flex items-center justify-between gap-4"
+              className="group rounded-2xl border border-zinc-200 bg-zinc-50/80 p-5 backdrop-blur-xl transition-all duration-200 hover:border-zinc-300 hover:bg-zinc-100/80 shadow-xs flex items-center justify-between gap-4"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-white/[0.06] border border-white/10 flex items-center justify-center text-zinc-300 group-hover:text-white transition-colors">
+                <div className="w-10 h-10 rounded-xl bg-white border border-zinc-200 flex items-center justify-center text-zinc-700 group-hover:text-blue-600 group-hover:border-blue-200 transition-colors shadow-2xs">
                   <MessageSquare className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-xs sm:text-sm font-medium text-white group-hover:text-blue-200 transition-colors">
+                  <div className="text-xs sm:text-sm font-semibold text-zinc-950 group-hover:text-blue-600 transition-colors">
                     Still have questions?
                   </div>
-                  <div className="text-[11px] text-zinc-400 font-light">
+                  <div className="text-[11px] text-zinc-500 font-normal">
                     Send our team a message
                   </div>
                 </div>
               </div>
 
-              <ArrowRight className="w-4 h-4 text-zinc-400 group-hover:text-white group-hover:translate-x-0.5 transition-all" />
+              <ArrowRight className="w-4 h-4 text-zinc-400 group-hover:text-zinc-950 group-hover:translate-x-0.5 transition-all" />
             </Link>
           </AppleReveal>
         </div>
@@ -134,8 +134,8 @@ export const FAQ = () => {
                   onClick={() => setActiveCategory(cat)}
                   className={`px-4 py-1.5 rounded-full text-xs font-medium transition-all duration-150 border ${
                     activeCategory === cat
-                      ? "bg-white text-zinc-950 border-white shadow-md shadow-white/10"
-                      : "bg-zinc-950/70 text-zinc-400 border-white/[0.08] hover:text-white hover:border-white/20"
+                      ? "bg-zinc-950 text-white border-zinc-950 shadow-xs"
+                      : "bg-zinc-100 text-zinc-600 border-zinc-200 hover:text-zinc-950 hover:bg-zinc-200/70"
                   }`}
                 >
                   {cat}
@@ -146,7 +146,7 @@ export const FAQ = () => {
 
           {/* Rounded Accordion Box */}
           <AppleReveal delay={0.2}>
-            <div className="rounded-2xl border border-white/[0.08] bg-zinc-950/60 p-2 sm:p-4 backdrop-blur-xl shadow-[0_15px_45px_-15px_rgba(0,0,0,0.8)] divide-y divide-white/[0.06]">
+            <div className="rounded-2xl border border-zinc-200 bg-zinc-50/60 p-2 sm:p-4 backdrop-blur-xl shadow-xs divide-y divide-zinc-200">
               {filteredFAQs.map((faq) => {
                 const isOpen = !!openIds[faq.id];
                 return (
@@ -155,16 +155,16 @@ export const FAQ = () => {
                       onClick={() => toggleFAQ(faq.id)}
                       className="w-full flex items-center justify-between gap-4 text-left group"
                     >
-                      <span className="text-sm sm:text-base font-serif text-white group-hover:text-blue-200 transition-colors leading-snug">
+                      <span className="text-sm sm:text-base font-serif text-zinc-950 group-hover:text-blue-600 transition-colors leading-snug">
                         {faq.question}
                       </span>
-                      <div className="w-7 h-7 rounded-full bg-white/[0.04] border border-white/10 flex items-center justify-center text-zinc-400 group-hover:text-white shrink-0 transition-all">
+                      <div className="w-7 h-7 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-zinc-600 group-hover:text-zinc-950 shrink-0 transition-all shadow-2xs">
                         {isOpen ? <Minus className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
                       </div>
                     </button>
 
                     {isOpen && (
-                      <div className="pt-3.5 pr-8 text-xs sm:text-sm text-zinc-400 font-light leading-relaxed animate-in fade-in duration-200">
+                      <div className="pt-3.5 pr-8 text-xs sm:text-sm text-zinc-600 font-normal leading-relaxed animate-in fade-in duration-200">
                         {faq.answer}
                       </div>
                     )}

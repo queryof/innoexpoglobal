@@ -12,22 +12,22 @@ const inter = Inter({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#000000",
+  themeColor: "#ffffff",
 };
 
 export const metadata: Metadata = {
-  title: "Inno Expo GL — World Robot Games 2026 Bangladesh Pathway",
+  title: "InnoExpo GL — Pupil-Led STEM Innovation Platform",
   description:
-    "The world's premier youth robotics & scientific innovation platform. Register through Inno Expo GL for the WRG 2026 Bangladesh National Qualifier and Japan International Finals.",
+    "InnoExpo GL is a non-profit innovation platform run by pupils making STEM education accessible, providing project materials, mentorship, and pathways to national and global stages.",
   keywords: [
-    "Inno Expo GL",
+    "InnoExpo GL",
+    "STEM Education",
+    "Youth Robotics",
     "World Robot Games 2026",
-    "WRG 2026 Bangladesh",
-    "RoboBuild Sustainable Cities",
-    "Chiba Port Arena Japan",
-    "Tech Autocrats",
+    "Project-Based Learning",
+    "Bangladesh Science Olympiad",
   ],
-  authors: [{ name: "Inno Expo GL Organization" }],
+  authors: [{ name: "InnoExpo GL Organization" }],
 };
 
 export default function RootLayout({
@@ -36,8 +36,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth">
-      <body className={`${inter.className} min-h-screen bg-black text-white antialiased selection:bg-blue-500 selection:text-white`}>
+    <html lang="en" className="light scroll-smooth">
+      <body className={`${inter.className} min-h-screen bg-white text-zinc-900 antialiased selection:bg-blue-600 selection:text-white`}>
         <SmoothScrollProvider>
           {children}
         </SmoothScrollProvider>
