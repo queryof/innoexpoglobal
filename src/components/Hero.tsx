@@ -25,7 +25,7 @@ export const Hero = () => {
           </span>
         </motion.div>
 
-        {/* Hero Headline with Text Shadow & High-Contrast Shaded Pill */}
+        {/* Hero Headline */}
         <motion.h1
           initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -38,17 +38,17 @@ export const Hero = () => {
           </span>
         </motion.h1>
 
-        {/* Subtitle with Bright, Readable Font Color and Shadow */}
+        {/* Subtitle aligned with authentic InnoExpo GL data */}
         <motion.p
           initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.9, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="text-sm sm:text-base lg:text-lg text-zinc-100 max-w-2xl font-normal leading-relaxed mb-10 drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]"
         >
-          Inno Expo GL is an international non-profit platform for science, robotics, and youth innovation. We bring ambitious people together through global competitions, workshops, and hands-on learning.
+          InnoExpo GL is a pupil-led non-profit innovation platform committed to making STEM education accessible. We help students turn ideas into real-world solutions through mentorship, free project materials, and global competition stages.
         </motion.p>
 
-        {/* Action Buttons with Crisp Shadows & Glass Backgrounds */}
+        {/* Action Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -56,18 +56,18 @@ export const Hero = () => {
           className="flex flex-wrap items-center justify-center gap-4"
         >
           <Link
-            href="#events"
+            href="#what-we-do"
             className="inline-flex items-center gap-2 rounded-xl bg-zinc-950/80 hover:bg-zinc-900 text-white backdrop-blur-xl px-6 py-3 border border-white/20 text-xs sm:text-sm font-medium transition-all hover:border-white/35 active:scale-95 shadow-2xl shadow-black/90"
           >
             <Compass className="w-4 h-4 text-blue-200" />
-            <span>Explore Events</span>
+            <span>What We Do</span>
           </Link>
 
           <Link
             href="/register"
             className="inline-flex items-center gap-2 rounded-xl bg-white text-zinc-950 hover:bg-zinc-100 px-6 py-3 text-xs sm:text-sm font-semibold transition-all shadow-2xl shadow-white/20 active:scale-95"
           >
-            <span>Join Inno Expo GL</span>
+            <span>Join InnoExpo GL</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </motion.div>
