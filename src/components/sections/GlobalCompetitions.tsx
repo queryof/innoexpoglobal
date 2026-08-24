@@ -77,7 +77,7 @@ export const GlobalCompetitions = () => {
       : segments.filter((s) => s.division === activeCategory);
 
   return (
-    <section id="competitions" className="relative z-10 w-full border-t border-zinc-200 bg-white text-zinc-900">
+    <section id="competitions" className="relative z-10 w-full border-t border-zinc-200 bg-[#f0f7ff] text-zinc-900">
       
       {/* Top Header Grid Row */}
       <div className="py-20 sm:py-24 px-6 sm:px-12 max-w-4xl text-left">
@@ -198,7 +198,7 @@ export const GlobalCompetitions = () => {
       </div>
 
       {/* Japan Trip Details */}
-      <div className="border-t border-zinc-200 grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-zinc-200 items-center bg-white">
+      <div className="border-t border-zinc-200 grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-zinc-200 items-center bg-[#f0f7ff]">
         <div className="lg:col-span-8 p-8 sm:p-12 text-left">
           <AppleReveal>
             <div className="text-xs text-zinc-500 mb-1">Trip to Japan</div>

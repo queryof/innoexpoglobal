@@ -16,7 +16,7 @@ import FinalCTA from "@/components/sections/FinalCTA";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-zinc-900 flex flex-col justify-between selection:bg-blue-600 selection:text-white relative">
+    <main className="min-h-screen bg-[#f0f7ff] text-zinc-900 flex flex-col justify-between selection:bg-blue-600 selection:text-white relative">
       
       {/* 1. Fixed Floating Glass Pill Header */}
       <Header />
@@ -37,7 +37,7 @@ export default function Home() {
         {/* Soft Light Fade Layer */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 h-[720px] bg-[radial-gradient(ellipse_90%_80%_at_50%_30%,transparent_30%,rgba(255,255,255,0.7)_65%,white_95%)]"
+          className="pointer-events-none absolute inset-0 h-[720px] bg-[radial-gradient(ellipse_90%_80%_at_50%_30%,transparent_30%,rgba(240,247,255,0.7)_65%,#f0f7ff_95%)]"
         />
 
         {/* Hero Content */}

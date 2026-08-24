@@ -12,7 +12,7 @@ const inter = Inter({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#ffffff",
+  themeColor: "#f0f7ff",
 };
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="light scroll-smooth">
-      <body className={`${inter.className} min-h-screen bg-white text-zinc-900 antialiased selection:bg-blue-600 selection:text-white`}>
+      <body className={`${inter.className} min-h-screen bg-[#f0f7ff] text-zinc-900 antialiased selection:bg-blue-600 selection:text-white`}>
         <SmoothScrollProvider>
           {children}
         </SmoothScrollProvider>

@@ -23,20 +23,20 @@ export const Footer = () => {
   }, []);
 
   return (
-    <footer className="relative w-full overflow-hidden bg-white text-zinc-900 pt-28 pb-14 px-6 sm:px-12 border-t border-zinc-200">
-      {/* High-Visibility Animated Sapphire Blue Gradient Bars */}
+    <footer className="relative w-full overflow-hidden bg-[#f0f7ff] text-zinc-900 pt-28 pb-14 px-6 sm:px-12 border-t border-zinc-200">
+      {/* Animated Dark Blue Gradient Bars Background */}
       <GradientBars
         numBars={18}
-        gradientFrom="rgba(37, 99, 235, 0.38)"
+        gradientFrom="rgba(30, 58, 138, 0.50)"
         gradientTo="transparent"
         animationDuration={2.4}
-        className="opacity-80 pointer-events-none"
+        className="opacity-90 pointer-events-none"
       />
 
-      {/* Vibrant Sky/Sapphire Radial Glow Base for Light Background */}
+      {/* Deep Dark Blue / Cobalt Radial Glow Base */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-[450px] bg-[radial-gradient(ellipse_80%_80%_at_50%_120%,rgba(37,99,235,0.28),rgba(96,165,250,0.16)_40%,transparent_80%)] blur-2xl"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-[450px] bg-[radial-gradient(ellipse_80%_80%_at_50%_120%,rgba(30,58,138,0.38),rgba(29,78,216,0.24)_40%,transparent_80%)] blur-2xl"
       />
 
       <div className="relative z-10 max-w-7xl mx-auto">
@@ -58,7 +58,7 @@ export const Footer = () => {
             <h2 className="text-3xl sm:text-5xl font-serif text-zinc-950 tracking-tight leading-[1.15]">
               Stay connected &amp; <br />
               <span className="font-sans font-normal text-zinc-950">keep </span>
-              <span className="font-serif italic font-light text-blue-600">building</span>
+              <span className="font-serif italic font-light text-blue-700">building</span>
             </h2>
 
             <p className="text-xs sm:text-sm text-zinc-600 font-normal pt-1">
@@ -160,7 +160,7 @@ export const Footer = () => {
               href="https://ioexo.vercel.app"
               target="_blank"
               rel="noreferrer"
-              className="text-zinc-600 hover:text-blue-600 transition-colors mt-0.5 block"
+              className="text-zinc-600 hover:text-blue-700 transition-colors mt-0.5 block"
             >
               @innoexpo.gl
             </Link>

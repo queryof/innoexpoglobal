@@ -7,7 +7,7 @@ import AppleReveal from "@/components/ui/apple-reveal";
 
 export const AboutUs = () => {
   return (
-    <section id="about" className="relative z-10 w-full border-t border-zinc-200 bg-white text-zinc-900">
+    <section id="about" className="relative z-10 w-full border-t border-zinc-200 bg-[#f0f7ff] text-zinc-900">
       
       {/* Top Header Grid Row */}
       <div className="py-20 sm:py-24 px-6 sm:px-12 max-w-4xl text-left">

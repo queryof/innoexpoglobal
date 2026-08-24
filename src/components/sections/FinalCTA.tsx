@@ -7,7 +7,7 @@ import AppleReveal from "@/components/ui/apple-reveal";
 
 export const FinalCTA = () => {
   return (
-    <section className="relative z-10 w-full border-t border-zinc-200 bg-white text-zinc-900">
+    <section className="relative z-10 w-full border-t border-zinc-200 bg-[#f0f7ff] text-zinc-900">
       
       {/* Main CTA Grid Area (Light Theme) */}
       <div className="py-24 sm:py-32 px-6 sm:px-12 max-w-4xl text-left relative z-10">

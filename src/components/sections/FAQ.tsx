@@ -76,7 +76,7 @@ export const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="relative z-10 w-full border-t border-zinc-200 bg-white text-zinc-900">
+    <section id="faq" className="relative z-10 w-full border-t border-zinc-200 bg-[#f0f7ff] text-zinc-900">
       {/* 2-Column Structured Grid Layout (Light Theme) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-zinc-200">
         
