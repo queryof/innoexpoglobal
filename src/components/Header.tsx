@@ -61,16 +61,25 @@ export const Header = () => {
       {/* Floating Rounded-Full Glass Pill Header */}
       <header className="max-w-7xl mx-auto pointer-events-auto">
         <div
-          className={`relative rounded-full border backdrop-blur-2xl px-4 sm:px-6 py-2.5 flex items-center justify-between shadow-2xl shadow-black/80 transition-all duration-300 ${
+          className={`relative rounded-full border backdrop-blur-2xl px-4 sm:px-6 py-2 flex items-center justify-between shadow-2xl shadow-black/80 transition-all duration-300 ${
             isScrolled
               ? "bg-zinc-950/85 border-white/[0.18] shadow-[0_10px_35px_rgba(0,0,0,0.9)] hover:border-white/[0.28]"
               : "bg-zinc-950/70 border-white/[0.12] hover:border-white/[0.22]"
           }`}
         >
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group shrink-0">
-            <div className="border border-dashed border-white/30 bg-white/[0.04] px-3 py-1 rounded-md text-[11px] font-mono text-zinc-300 group-hover:border-white/60 group-hover:text-white transition-all flex items-center gap-1.5">
-              <span>Placeholder Logo (120x32)</span>
+          {/* Logo with Soft Background Glow for Dark Contrast */}
+          <Link href="/" className="relative flex items-center group shrink-0 py-0.5">
+            {/* Luminous Glow Backlights */}
+            <div className="absolute inset-0 bg-white/35 blur-md rounded-xl transform scale-110 opacity-70 group-hover:opacity-100 group-hover:bg-blue-400/40 transition-all pointer-events-none" />
+            <div className="absolute inset-0 bg-blue-500/25 blur-lg rounded-full transform scale-125 pointer-events-none" />
+            
+            {/* Frosted Contrast Base Pod */}
+            <div className="relative z-10 px-2.5 py-1 rounded-xl bg-white/[0.12] border border-white/20 backdrop-blur-md shadow-lg shadow-black/40 flex items-center justify-center transition-transform group-hover:scale-105">
+              <img
+                src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
+                alt="Inno Expo GL"
+                className="h-7 sm:h-8 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
+              />
             </div>
           </Link>
 

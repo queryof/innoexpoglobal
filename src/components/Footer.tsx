@@ -43,8 +43,23 @@ export const Footer = () => {
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 mb-24 items-start">
           
-          {/* Left Column: Heading & CTA */}
-          <div className="lg:col-span-6 space-y-4">
+          {/* Left Column: Logo, Heading & CTA */}
+          <div className="lg:col-span-6 space-y-6">
+            
+            {/* Inno Expo GL Logo with Ambient Contrast Backlight */}
+            <div className="relative inline-flex items-center group">
+              <div className="absolute inset-0 bg-white/30 blur-md rounded-xl transform scale-110 opacity-70 group-hover:opacity-100 group-hover:bg-blue-400/40 transition-all pointer-events-none" />
+              <div className="absolute inset-0 bg-blue-500/20 blur-lg rounded-full transform scale-125 pointer-events-none" />
+              
+              <div className="relative z-10 px-3 py-1.5 rounded-xl bg-white/[0.1] border border-white/20 backdrop-blur-md shadow-lg shadow-black/40 flex items-center justify-center">
+                <img
+                  src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
+                  alt="Inno Expo GL"
+                  className="h-8 sm:h-9 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
+                />
+              </div>
+            </div>
+
             <h2 className="text-3xl sm:text-5xl font-serif text-white tracking-tight leading-[1.15]">
               Stay connected &amp; <br />
               <span className="font-sans font-normal text-white">keep </span>
@@ -55,7 +70,7 @@ export const Footer = () => {
               Join thousands of students and builders in Bangladesh and worldwide.
             </p>
 
-            <div className="pt-3">
+            <div className="pt-2">
               <Link
                 href="/register"
                 className="inline-flex items-center gap-2 rounded-xl bg-white/10 hover:bg-white/15 text-white backdrop-blur-md px-5 py-2.5 border border-white/15 text-xs sm:text-sm font-medium transition-all hover:border-white/25 active:scale-95 shadow-lg shadow-black/40"
