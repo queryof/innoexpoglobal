@@ -46,18 +46,25 @@ export const Footer = () => {
           {/* Left Column: Logo, Heading & CTA */}
           <div className="lg:col-span-6 space-y-6">
             
-            {/* Inno Expo GL Logo with Ambient Contrast Backlight */}
-            <div className="relative inline-flex items-center group">
-              <div className="absolute inset-0 bg-white/30 blur-md rounded-xl transform scale-110 opacity-70 group-hover:opacity-100 group-hover:bg-blue-400/40 transition-all pointer-events-none" />
-              <div className="absolute inset-0 bg-blue-500/20 blur-lg rounded-full transform scale-125 pointer-events-none" />
-              
-              <div className="relative z-10 px-3 py-1.5 rounded-xl bg-white/[0.1] border border-white/20 backdrop-blur-md shadow-lg shadow-black/40 flex items-center justify-center">
-                <img
-                  src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
-                  alt="Inno Expo GL"
-                  className="h-8 sm:h-9 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
-                />
-              </div>
+            {/* Inno Expo GL Logo with Exact Contour Silhouette Glow (NO box/pod) */}
+            <div className="relative inline-flex items-center group py-1">
+              <img
+                src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 h-8 sm:h-9 w-auto object-contain blur-[6px] opacity-80 brightness-[2.5] scale-105 pointer-events-none transition-all group-hover:opacity-100 group-hover:blur-[8px]"
+              />
+              <img
+                src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 h-8 sm:h-9 w-auto object-contain blur-[14px] opacity-65 brightness-150 saturate-200 scale-110 pointer-events-none transition-all group-hover:opacity-90"
+              />
+              <img
+                src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
+                alt="Inno Expo GL"
+                className="relative z-10 h-8 sm:h-9 w-auto object-contain transition-transform duration-200 group-hover:scale-105 drop-shadow-[0_0_6px_rgba(255,255,255,0.7)]"
+              />
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-serif text-white tracking-tight leading-[1.15]">

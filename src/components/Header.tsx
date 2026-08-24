@@ -67,20 +67,28 @@ export const Header = () => {
               : "bg-zinc-950/70 border-white/[0.12] hover:border-white/[0.22]"
           }`}
         >
-          {/* Logo with Soft Background Glow for Dark Contrast */}
-          <Link href="/" className="relative flex items-center group shrink-0 py-0.5">
-            {/* Luminous Glow Backlights */}
-            <div className="absolute inset-0 bg-white/35 blur-md rounded-xl transform scale-110 opacity-70 group-hover:opacity-100 group-hover:bg-blue-400/40 transition-all pointer-events-none" />
-            <div className="absolute inset-0 bg-blue-500/25 blur-lg rounded-full transform scale-125 pointer-events-none" />
-            
-            {/* Frosted Contrast Base Pod */}
-            <div className="relative z-10 px-2.5 py-1 rounded-xl bg-white/[0.12] border border-white/20 backdrop-blur-md shadow-lg shadow-black/40 flex items-center justify-center transition-transform group-hover:scale-105">
-              <img
-                src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
-                alt="Inno Expo GL"
-                className="h-7 sm:h-8 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
-              />
-            </div>
+          {/* Logo with Exact Contour Glow (Hugs the letters directly, NO box/pod) */}
+          <Link href="/" className="relative flex items-center shrink-0 group py-1">
+            {/* Layer 1: Intense White Silhouette Inner Glow */}
+            <img
+              src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
+              alt=""
+              aria-hidden="true"
+              className="absolute inset-0 h-7 sm:h-8 w-auto object-contain blur-[5px] opacity-80 brightness-[2.5] scale-105 pointer-events-none transition-all group-hover:opacity-100 group-hover:blur-[7px]"
+            />
+            {/* Layer 2: Ambient Blue Silhouette Outer Glow */}
+            <img
+              src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
+              alt=""
+              aria-hidden="true"
+              className="absolute inset-0 h-7 sm:h-8 w-auto object-contain blur-[12px] opacity-65 brightness-150 saturate-200 scale-110 pointer-events-none transition-all group-hover:opacity-90"
+            />
+            {/* Foreground Sharp Image */}
+            <img
+              src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
+              alt="Inno Expo GL"
+              className="relative z-10 h-7 sm:h-8 w-auto object-contain transition-transform duration-200 group-hover:scale-105 drop-shadow-[0_0_6px_rgba(255,255,255,0.7)]"
+            />
           </Link>
 
           {/* Desktop Navigation Links */}
