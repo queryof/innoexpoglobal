@@ -67,37 +67,12 @@ export const Header = () => {
               : "bg-zinc-950/70 border-white/[0.12] hover:border-white/[0.22]"
           }`}
         >
-          {/* Logo with High-Contrast Solid White & Blue Silhouette Halo */}
-          <Link href="/" className="relative flex items-center shrink-0 group py-1">
-            {/* Layer 1: Pure White Inner Silhouette Halo around all blocks including black letters */}
-            <img
-              src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
-              alt=""
-              aria-hidden="true"
-              className="absolute inset-0 h-7 sm:h-8 w-auto object-contain [filter:brightness(0)_invert(1)_blur(2.5px)] opacity-100 scale-[1.06] pointer-events-none transition-all group-hover:scale-[1.08]"
-            />
-            
-            {/* Layer 2: Medium White Ambient Backlight */}
-            <img
-              src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
-              alt=""
-              aria-hidden="true"
-              className="absolute inset-0 h-7 sm:h-8 w-auto object-contain [filter:brightness(0)_invert(1)_blur(6px)] opacity-90 scale-[1.12] pointer-events-none transition-all group-hover:scale-[1.15]"
-            />
-
-            {/* Layer 3: Cyan/Sapphire Outer Glow Aura */}
-            <img
-              src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
-              alt=""
-              aria-hidden="true"
-              className="absolute inset-0 h-7 sm:h-8 w-auto object-contain [filter:brightness(0)_invert(1)_drop-shadow(0_0_12px_#3b82f6)_blur(10px)] opacity-80 scale-[1.18] pointer-events-none transition-all group-hover:opacity-100"
-            />
-
-            {/* Foreground Sharp Image with Crisp Edge Highlight */}
+          {/* Logo with .logo-wrapper Ambient Radial Glow */}
+          <Link href="/" className="logo-wrapper shrink-0 group py-1">
             <img
               src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
               alt="Inno Expo GL"
-              className="relative z-10 h-7 sm:h-8 w-auto object-contain transition-transform duration-200 group-hover:scale-105 [filter:drop-shadow(0_0_1.5px_rgba(255,255,255,0.95))_drop-shadow(0_0_6px_rgba(255,255,255,0.7))]"
+              className="relative z-10 h-7 sm:h-8 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
             />
           </Link>
 
