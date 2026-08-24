@@ -46,24 +46,37 @@ export const Footer = () => {
           {/* Left Column: Logo, Heading & CTA */}
           <div className="lg:col-span-6 space-y-6">
             
-            {/* Inno Expo GL Logo with Exact Contour Silhouette Glow (NO box/pod) */}
+            {/* Inno Expo GL Logo with High-Contrast Solid White & Blue Silhouette Halo */}
             <div className="relative inline-flex items-center group py-1">
+              {/* Layer 1: Pure White Inner Silhouette Halo */}
               <img
                 src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
                 alt=""
                 aria-hidden="true"
-                className="absolute inset-0 h-8 sm:h-9 w-auto object-contain blur-[6px] opacity-80 brightness-[2.5] scale-105 pointer-events-none transition-all group-hover:opacity-100 group-hover:blur-[8px]"
+                className="absolute inset-0 h-8 sm:h-9 w-auto object-contain [filter:brightness(0)_invert(1)_blur(2.5px)] opacity-100 scale-[1.06] pointer-events-none transition-all group-hover:scale-[1.08]"
               />
+              
+              {/* Layer 2: Medium White Ambient Backlight */}
               <img
                 src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
                 alt=""
                 aria-hidden="true"
-                className="absolute inset-0 h-8 sm:h-9 w-auto object-contain blur-[14px] opacity-65 brightness-150 saturate-200 scale-110 pointer-events-none transition-all group-hover:opacity-90"
+                className="absolute inset-0 h-8 sm:h-9 w-auto object-contain [filter:brightness(0)_invert(1)_blur(6px)] opacity-90 scale-[1.12] pointer-events-none transition-all group-hover:scale-[1.15]"
               />
+
+              {/* Layer 3: Cyan/Sapphire Outer Glow Aura */}
+              <img
+                src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 h-8 sm:h-9 w-auto object-contain [filter:brightness(0)_invert(1)_drop-shadow(0_0_12px_#3b82f6)_blur(10px)] opacity-80 scale-[1.18] pointer-events-none transition-all group-hover:opacity-100"
+              />
+
+              {/* Foreground Sharp Image */}
               <img
                 src="/34f688d1-e284-4351-b20f-540fa95d61fc-nobg.png"
                 alt="Inno Expo GL"
-                className="relative z-10 h-8 sm:h-9 w-auto object-contain transition-transform duration-200 group-hover:scale-105 drop-shadow-[0_0_6px_rgba(255,255,255,0.7)]"
+                className="relative z-10 h-8 sm:h-9 w-auto object-contain transition-transform duration-200 group-hover:scale-105 [filter:drop-shadow(0_0_1.5px_rgba(255,255,255,0.95))_drop-shadow(0_0_6px_rgba(255,255,255,0.7))]"
               />
             </div>
 
